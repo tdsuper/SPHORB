@@ -42,6 +42,7 @@ Before using SPHORB, you need to install the OpenCV library.
 OpenCV 2.4.2 is used in our implementation.
 
 In SPHORB.rar, there are some folders and files.
+    
     -- Data folder
                     the data used to accelerate or simplify the algorithm
 
@@ -70,7 +71,7 @@ In SPHORB.rar, there are some folders and files.
 
 [1] J. Xiao, K. Ehinger, A. Oliva, and A. Torralba. Recognizing scene viewpoint 
     using panoramic place representation. In Proceedings of the IEEE Conference 
-    on Computer Vision and Pattern Recognition (CVPR), pages 2695¨C2702, 2012.
+    on Computer Vision and Pattern Recognition (CVPR), pages 2695Â¨C2702, 2012.
 
 [2] E. Rosten and T. Drummond. Machine learning for highspeed corner detection. 
     In Proceedings of the European Conference on Computer Vision (ECCV), 2006.
