@@ -41,7 +41,7 @@ What's included
 Before using SPHORB, you need to install the OpenCV library. 
 OpenCV 2.4.2 is used in our implementation.
 
-In SPHORB.rar, there are some folders and files.
+In the repository, there are some folders and files.
     
     -- Data folder
                     the data used to accelerate or simplify the algorithm
