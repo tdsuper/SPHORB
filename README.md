@@ -26,6 +26,11 @@ If you use this package in published work, please cite our work as
     author   = {Qiang Zhao and Wei Feng and Liang Wan and Jiawan Zhang},
     title    = {SPHORB: A Fast and Robust Binary Feature on the Sphere},
     journal  = {International Journal of Computer Vision},
+    doi      = {10.1007/s11263-014-0787-4},
+    year     = {2015},
+    volume   = {113},
+    number   = {2},
+    pages    = {143-159},
 }
 
 
