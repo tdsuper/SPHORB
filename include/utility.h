@@ -25,7 +25,7 @@
 #define _UTILITY_H
 
 #include <vector>
-#include <opencv.hpp>
+#include <opencv2/opencv.hpp>
 using namespace cv;
 
 typedef vector<DMatch> Matches;
