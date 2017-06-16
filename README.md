@@ -79,14 +79,14 @@ In the repository, there are some folders and files.
 ---------------
 Build and Run instructions
 ---------------
-`$ mkdir build`
-`$ cd build`
-`$ cmake ..`
-`$ make`
+`$ mkdir build`  
+`$ cd build`  
+`$ cmake ..`  
+`$ make`  
 
-Run Example (from root directory) 
-Example 1: `$ ./build/example1 Image/1_1.jpg Image/1_2.jpg`
-Example 2: `$ ./build/example2 Image/2_1.jpg Image/2_2.jpg`
+Run Example (from root directory)   
+Example 1: `$ ./build/example1 Image/1_1.jpg Image/1_2.jpg`  
+Example 2: `$ ./build/example2 Image/2_1.jpg Image/2_2.jpg`  
 
 -------------------
 Contact information
