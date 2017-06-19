@@ -23,19 +23,19 @@
 
 #include <iostream>
 #include <vector>
-#include <opencv.hpp>
+#include <opencv2/opencv.hpp>
 #include "SPHORB.h"
 #include "utility.h"
 using namespace std;
 using namespace cv;
 
-int main()
+int main(int argc, char * argv[])
 {
 	float ratio = 0.75f;
 	SPHORB sorb;
 
-	Mat img1 = imread("Image/1_1.jpg");
-	Mat img2 = imread("Image/1_2.jpg");
+	Mat img1 = imread(argv[1]);
+	Mat img2 = imread(argv[2]);
 
 	Mat descriptors1;
 	Mat descriptors2;

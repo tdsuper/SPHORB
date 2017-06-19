@@ -62,6 +62,7 @@ int* sfastScore(const unsigned char* i, int stride, xy* corners, int num_corners
 
 void sfastNonmaxSuppression(const xy* corners, const int* scores, int num_corners, vector<KeyPoint>& kps, int partIndex)
 {
+	bool goto_enabled = false;
 	int num_nonmax=0;
 	int last_row;
 	int* row_start;
@@ -131,8 +132,10 @@ void sfastNonmaxSuppression(const xy* corners, const int* scores, int num_corner
 			for(j=point_above; corners[j].y < pos.y && corners[j].x <= pos.x + 1; j++)
 			{
 				int x = corners[j].x;
-				if( (x ==pos.x || x == pos.x+1) && Compare(scores[j], score))
+				if( (x ==pos.x || x == pos.x+1) && Compare(scores[j], score)){
+                    goto_enabled = true;
 					goto cont;
+				}
 			}
 			
 		}
@@ -151,20 +154,25 @@ void sfastNonmaxSuppression(const xy* corners, const int* scores, int num_corner
 			for(j=point_below; j < sz && corners[j].y == pos.y+1 && corners[j].x <= pos.x; j++)
 			{
 				int x = corners[j].x;
-				if( (x == pos.x - 1 || x ==pos.x) && Compare(scores[j],score))
+				if( (x == pos.x - 1 || x ==pos.x) && Compare(scores[j],score)){
+					goto_enabled = true;
 					goto cont;
+				}
 			}
 		}
 		
-		KeyPoint kp;
-		kp.pt.x = corners[i].x;
-		kp.pt.y = corners[i].y;
-		kp.response = score;
-		kp.class_id = partIndex;
-		kps.push_back(kp);
-
 		cont:
-			;
+
+		if (!goto_enabled){ // If this part reached by goto
+			KeyPoint kp;
+			kp.pt.x = corners[i].x;
+			kp.pt.y = corners[i].y;
+			kp.response = score;
+			kp.class_id = partIndex;
+			kps.push_back(kp);
+		}
+		goto_enabled = false;
+
 	}
 
 	free(row_start);

@@ -24,7 +24,7 @@
 #ifndef _DETECTOR_H
 #define _DETECTOR_H
 
-#include <opencv.hpp>
+#include <opencv2/opencv.hpp>
 #include <vector>
 
 using namespace std;

@@ -48,18 +48,18 @@ In the repository, there are some folders and files.
 
     -- Image folder
                     the first image pair is for camera rotation with the source image from SUN360 database[1], 
-		    the second pair is for camera movement with the two images from Google Street View (C).
+            the second pair is for camera movement with the two images from Google Street View (C).
 
     -- pfm.h pfm.cpp
                     reader for PFM(Portable Float Map) file
 
     -- utility.h utility.cpp
                     the utility functions for ratio matching strategy and drawing matches
-		    (different with the "drawMatches" function of OpenCV)
+            (different with the "drawMatches" function of OpenCV)
 
     -- detector.h detector.cpp nonmax.cpp
                     spherical FAST detector trained using the scheme of Rosten and Drummond[2], 
-		    and the non-maximal suppression using FAST score
+            and the non-maximal suppression using FAST score
 
     -- SPHORB.h SPHORB.cpp
                     the SPHORB algorithm
@@ -76,7 +76,17 @@ In the repository, there are some folders and files.
 [2] E. Rosten and T. Drummond. Machine learning for highspeed corner detection. 
     In Proceedings of the European Conference on Computer Vision (ECCV), 2006.
 
+---------------
+Build and Run instructions
+---------------
+`$ mkdir build`  
+`$ cd build`  
+`$ cmake ..`  
+`$ make`  
 
+Run Example (from root directory)   
+Example 1: `$ ./build/example1 Image/1_1.jpg Image/1_2.jpg`  
+Example 2: `$ ./build/example2 Image/2_1.jpg Image/2_2.jpg`  
 
 -------------------
 Contact information

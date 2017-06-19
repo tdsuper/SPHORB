@@ -26,6 +26,9 @@
 #include "SPHORB.h"
 #include "pfm.h"
 #include "detector.h"
+
+#define MAX_PATH 256
+
 namespace cv
 {
 	std::vector<float*> geoinfos;

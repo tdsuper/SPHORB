@@ -24,8 +24,9 @@
 #ifndef _SPHORB_H
 #define _SPHORB_H
 
-#include <opencv.hpp>		
+#include <opencv2/opencv.hpp>	
 #include <vector>
+#include <stdio.h>
 using namespace cv;
 
 namespace cv
