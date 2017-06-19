@@ -27,7 +27,7 @@
 #include "pfm.h"
 #include "detector.h"
 
-#define MAX_PATH 15
+#define MAX_PATH 256
 
 namespace cv
 {
