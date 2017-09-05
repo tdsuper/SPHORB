@@ -1,8 +1,5 @@
 # SPHORB
 
-
-
-----------------
 What is SPHORB?
 ----------------
 
@@ -14,7 +11,6 @@ regular hexagonal grid parametrization of the sphere - geodesic grid, we can ado
 planar ORB features to the spherical domain and achieve satisfactory performance.
 
 
------------------
 Conditions of use
 -----------------
 
@@ -22,6 +18,7 @@ SPHORB is distributed under the GNU General Public License.  For information on
 commercial licensing, please contact the authors at the contact address below.
 
 If you use this package in published work, please cite our work as
+```
 @article{zhao-SPHORB,
     author   = {Qiang Zhao and Wei Feng and Liang Wan and Jiawan Zhang},
     title    = {SPHORB: A Fast and Robust Binary Feature on the Sphere},
@@ -32,9 +29,8 @@ If you use this package in published work, please cite our work as
     number   = {2},
     pages    = {143-159},
 }
+```
 
-
----------------
 What's included
 ---------------
 
@@ -76,7 +72,6 @@ In the repository, there are some folders and files.
 [2] E. Rosten and T. Drummond. Machine learning for highspeed corner detection. 
     In Proceedings of the European Conference on Computer Vision (ECCV), 2006.
 
----------------
 Build and Run instructions
 ---------------
 `$ mkdir build`  
@@ -88,7 +83,6 @@ Run Example (from root directory)
 Example 1: `$ ./build/example1 Image/1_1.jpg Image/1_2.jpg`  
 Example 2: `$ ./build/example2 Image/2_1.jpg Image/2_2.jpg`  
 
--------------------
 Contact information
 -------------------
 
